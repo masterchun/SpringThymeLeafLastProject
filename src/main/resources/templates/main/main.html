@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<title>Verti by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" th:href="@{/assets/css/main.css}" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</head>
+	<body class="is-preload homepage">
+		<div id="page-wrapper">
+		  <th:block th:include="main/header"></th:block>
+		  <th:block th:include="${main_html}"></th:block>
+		  <th:block th:include="main/footer"></th:block>
+		</div>
+
+		<!-- Scripts -->
+
+			<!--<script th:src="@{/assets/js/jquery.min.js}"></script>-->
+			<script src="http://code.jquery.com/jquery.js"></script>
+			<script th:src="@{/assets/js/jquery.dropotron.min.js}"></script>
+			<script th:src="@{/assets/js/browser.min.js}"></script>
+			<script th:src="@{/assets/js/breakpoints.min.js}"></script>
+			<script th:src="@{/assets/js/util.js}"></script>
+			<script th:src="@{/assets/js/main.js}"></script>
+	</body>
+</html>
